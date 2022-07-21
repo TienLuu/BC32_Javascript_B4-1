@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="icon" href="./images/download (2).jfif">
+
+    <!-- BS4 CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- SẮP XẾP 3 SỐ NGUYÊN THEO THỨ TỰ TĂNG DẦN -->
+    <div class="card">
+        <div class="card-header">
+            SẮP XẾP 3 SỐ NGUYÊN THEO THỨ TỰ TĂNG DẦN
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="">Số Nguyên 1:</label>
+                <input type="text" name="" id="integerNumber1" class="form-control" placeholder="Nhập số nguyên thứ 1"
+                    aria-describedby="helpId">
+            </div>
+            <div class="form-group">
+                <label for="">Số Nguyên 2:</label>
+                <input type="text" name="" id="integerNumber2" class="form-control" placeholder="Nhập số nguyên thứ 2"
+                    aria-describedby="helpId">
+            </div>
+            <div class="form-group">
+                <label for="">Số Nguyên 3:</label>
+                <input type="text" name="" id="integerNumber3" class="form-control" placeholder="Nhập số nguyên thứ 3"
+                    aria-describedby="helpId">
+            </div>
+            <button type="button" class="btn btn-success" onclick="sortIntegerNumbers()">Sắp Xếp</button>
+        </div>
+        <div class="card-footer text-muted" id="showAscendingSort">
+            Footer
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <!-- CHƯƠNG TRÌNH CHÀO HỎI NGƯỜI DÙNG -->
+    <div class="card">
+        <div class="card-header">
+            CHƯƠNG TRÌNH CHÀO HỎI NGƯỜI DÙNG
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="">Người sử dụng máy:</label>
+                <select class="form-control" name="" id="endUser">
+                    <option value="b">Bố</option>
+                    <option value="m">Mẹ</option>
+                    <option value="a">Anh trai</option>
+                    <option value="e">Em gái</option>
+                </select>
+            </div>
+            <button type="button" class="btn btn-success" onclick="getLogin()">Đăng Nhập</button>
+        </div>
+        <div class="card-footer text-muted" id="showEndUserInfo">
+            Footer
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <!-- ĐẾM SỐ CHẴN, LẼ TRONG DÃY SỐ -->
+    <div class="card">
+        <div class="card-header">
+            ĐẾM SỐ CHẴN, LẼ TRONG DÃY SỐ
+        </div>
+        <div class="card-body">
+            <div id="showNumberValue">
+            </div>
+            <button type="button" class="btn btn-success" onclick="countNumbers()">Tìm kiếm</button>
+        </div>
+        <div class="card-footer text-muted" id="showNumber">
+            Footer
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <!-- PHÂN TÍCH TAM GIÁC -->
+    <div class="card">
+        <div class="card-header">
+            PHÂN TÍCH TAM GIÁC
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="">Cạnh thứ 1</label>
+                <input type="text" name="" id="side1" class="form-control" placeholder="Nhập cạnh 1"
+                    aria-describedby="helpId">
+            </div>
+            <div class="form-group">
+                <label for="">Cạnh thứ 2</label>
+                <input type="text" name="" id="side2" class="form-control" placeholder="Nhập cạnh 2"
+                    aria-describedby="helpId">
+            </div>
+            <div class="form-group">
+                <label for="">Cạnh thứ 3</label>
+                <input type="text" name="" id="side3" class="form-control" placeholder="Nhập cạnh 3"
+                    aria-describedby="helpId">
+            </div>
+            <button type="button" class="btn btn-success" onclick="analyseTriangle()">Phân tích</button>
+        </div>
+        <div class="card-footer text-muted" id="showTriangle">
+            Footer
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <!-- OPTIONAL JAVASCRIPT -->
+    <!-- JQUERY SLIM FIRST, THEN POPPERJS, THEN BS4 JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- MAIN JS -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
